@@ -26,21 +26,21 @@ This is based on an example provided in [this comment on Reddit r/firefox](https
 ## INSTALLATION
 
 1. In Firefox:
-    a. Enable `userChrome.css` support:
-        i. Visit `about:config`
-        ii. Search for the `toolkit.legacyUserProfileCustomizations.stylesheets` setting
-        iii. Set it to `true`
-    b. Locate your Firefox profile directory:
-        i. Visit `about:profiles`:
-        ii. Look for the profile with "This is the profile in use and it cannot be deleted"
-        iii. Note the "Root Directory" path (**NOT** the "Local Directory") for use in the next step
+    1. Enable `userChrome.css` support:
+        1. Visit `about:config`
+        2. Search for the `toolkit.legacyUserProfileCustomizations.stylesheets` setting
+        3. Set it to `true`
+    2. Locate your Firefox profile directory:
+        1. Visit `about:profiles`:
+        2. Look for the profile with "This is the profile in use and it cannot be deleted"
+        3. Note the "Root Directory" path (**NOT** the "Local Directory") for use in the next step
 2. Create `chrome/userChrome.css` in your local profile directory:
-    a. Navigate to the profile's "Root Directory", as located above (e.g. `cd ~/.mozilla/<profile-root-dir>`)
-    b. Create a new `chrome` subdirectory and navigate into it (e.g. `mkdir chrome && cd chrome`)
-    c. Make a new `userChrome.css` file (e.g. `touch userChrome.css`)
+    1. Navigate to the profile's "Root Directory", as located above (e.g. `cd ~/.mozilla/<profile-root-dir>`)
+    2. Create a new `chrome` subdirectory and navigate into it (e.g. `mkdir chrome && cd chrome`)
+    3. Make a new `userChrome.css` file (e.g. `touch userChrome.css`)
 3. Install `chrome/auto-hide-tab-bar.css`:
-    a. Copy the `chrome/auto-hide-tab-bar.css` file from this repository into your profile's `chrome` subdirectory
-    b. Edit the `userChrome.css` in your profile's `chrome` subdirectory to add the following line:  
+    1. Copy the `chrome/auto-hide-tab-bar.css` file from this repository into your profile's `chrome` subdirectory
+    2. Edit the `userChrome.css` in your profile's `chrome` subdirectory to add the following line:  
         ```
         @import "./auto-hide-tab-bar.css";
         ```
