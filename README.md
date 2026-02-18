@@ -34,7 +34,7 @@ While I have strived for compatibility with other `userChrome.css` customization
 
 This is based on an example provided in [this comment on Reddit r/firefox](https://www.reddit.com/r/firefox/comments/1h3l8sf/comment/m00a26w/), plus a trick to preserve window controls from [this comment on an irvinm/Toggle-Native-Tab-Bar GitHub issue](https://github.com/irvinm/Toggle-Native-Tab-Bar/issues/3#issuecomment-2556331029). It is implemented as a separate `auto-hide-tab-bar.css` file which can be imported into your `userChrome.css` for easier and safer integration with other customizations.
 
-**NOTE:** This _does not_ show the window/tab title, unlike some alternatives linked below. This is because I run a window manager which provides window controls ([MLVWM](https://github.com/morgant/mlvwm), specifically), so the title is already displayed and therefore redundant. I also disable [client-side decorations (CSD)](https://en.wikipedia.org/wiki/Client-side_decoration), but have implemented moving window controls in case CSD ever gets re-enabled or I use it under another OS. 
+**NOTE:** This _does not_ re-style/relocate the tab title to show it elsewhere, unlike some alternatives linked below. This is because I run a window manager which provides a full title bar with window controls ([MLVWM](https://github.com/morgant/mlvwm), specifically), so the title is already displayed and therefore redundant. I also disable [client-side decorations (CSD)](https://en.wikipedia.org/wiki/Client-side_decoration), but have implemented moving window controls in case CSD ever gets re-enabled or I use it under another OS.
 
 ## INSTALLATION
 
