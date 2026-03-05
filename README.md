@@ -37,7 +37,7 @@ installation instructions below._
 ## COMPATIBILITY
 
 This `userChrome.css` has been tested and confirmed to work in Firefox
-versions 128.3.0 through 147.0.4 under [OpenBSD](https://www.openbsd.org)
+versions 128.3.0 through 148.0 under [OpenBSD](https://www.openbsd.org)
 and [macOS](https://www.apple.com/os/macos/). It has only been tested as **the
 only** `userChrome.css` installed.
 

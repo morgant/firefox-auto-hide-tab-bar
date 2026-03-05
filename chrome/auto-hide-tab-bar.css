@@ -1,11 +1,15 @@
 /* auto-hide-tab-bar.css
  *
  * Automatically hides the tab bar in Firefox-based browsers if only one tab is open, preserving window minimize/maximize/close controls */
-#main-window:has(#tabbrowser-tabs .tabbrowser-tab:only-of-type) {
-  #TabsToolbar {
+/* #main-window:has(#tabbrowser-tabs .tabbrowser-tab:only-of-type) { */
+:root:has(#tabbrowser-tabs .tabbrowser-tab:only-of-type) {
+  & #TabsToolbar {
     display: none !important;
   }
-  #titlebar .titlebar-buttonbox-container {
-    display: flex !important;
+  & #titlebar,
+  & #toolbar-menubar {
+    & .titlebar-buttonbox-container {
+      display: flex !important;
+    }
   }
 }
