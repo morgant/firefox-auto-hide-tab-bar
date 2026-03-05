@@ -52,26 +52,8 @@ introducing breaking-changes with new versions, I cannot guarantee it will
 work for you. Especially when combined with other `userChrome.css`
 customizations.
 
-If it's not working or causing UI/UX issues, please do not use it.
-
-## IMPLEMENTATION
-
-This is based on an example provided in [this comment on an r/firefox (Reddit)
-post](https://www.reddit.com/r/firefox/comments/1h3l8sf/comment/m00a26w/),
-plus a trick to preserve window controls from [this comment on an
-irvinm/Toggle-Native-Tab-Bar GitHub issue](https://github.com/irvinm/Toggle-Native-Tab-Bar/issues/3#issuecomment-2556331029).
-It is implemented as a separate `auto-hide-tab-bar.css` file which can be
-imported into your `userChrome.css` for easier and safer integration with
-other customizations.
-
-**NOTE:** This _does not_ re-style/relocate the tab title to show it
-elsewhere in the Firefox window, unlike some alternatives linked below.
-This is because I run a window manager which provides a full title bar with
-window controls ([MLVWM](https://github.com/morgant/mlvwm), specifically), so
-the title is already displayed (therefore redundant.) I also disable
-[client-side decorations (CSD)](https://en.wikipedia.org/wiki/Client-side_decoration),
-but have implemented moving window controls in case CSD gets re-enabled or for
-use it under another OS, desktop environment(DE), and/or window manager (WM).
+**IMPORTANT**: _If it's not working or causing UI/UX issues, please do not
+use it!_
 
 ## INSTALLATION
 
@@ -111,6 +93,25 @@ use it under another OS, desktop environment(DE), and/or window manager (WM).
 * [firefox-hide-tabs](https://github.com/geoffreytools/firefox-hide-tabs)
 * [Toggle Native Tab Bar](https://github.com/irvinm/Toggle-Native-Tab-Bar)
 
+## IMPLEMENTATION
+
+This is based on an example provided in [this comment on an r/firefox (Reddit)
+post](https://www.reddit.com/r/firefox/comments/1h3l8sf/comment/m00a26w/),
+plus a trick to preserve window controls from [this comment on an
+irvinm/Toggle-Native-Tab-Bar GitHub issue](https://github.com/irvinm/Toggle-Native-Tab-Bar/issues/3#issuecomment-2556331029).
+It is implemented as a separate `auto-hide-tab-bar.css` file which can be
+imported into your `userChrome.css` for easier and safer integration with
+other customizations.
+
+**NOTE:** This _does not_ re-style/relocate the tab title to show it
+elsewhere in the Firefox window, unlike some alternatives linked below.
+This is because I run a window manager which provides a full title bar with
+window controls ([MLVWM](https://github.com/morgant/mlvwm), specifically), so
+the title is already displayed (therefore redundant.) I also disable
+[client-side decorations (CSD)](https://en.wikipedia.org/wiki/Client-side_decoration),
+but have implemented moving window controls in case CSD gets re-enabled or for
+use it under another OS, desktop environment(DE), and/or window manager (WM).
+
 ## A BRIEF HISTORY OF TABBED BROWSING
 
 While I was an early adopter of Firefox, I don't remember the specific feature
@@ -123,7 +124,7 @@ browsing". Most notably, while other browsers (including Opera and Mozilla's
 own "Mozilla") supported tabbed browsing, Firefox was the first to have 
 widespread adoption (see the [History: Versions](https://en.wikipedia.org/wiki/Firefox#Versions)
 section of [Wikipedia's Firefox article](https://en.wikipedia.org/wiki/Firefox)
-for further details.
+for further details.)
 
 ## LICENSE
 
